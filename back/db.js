@@ -1,18 +1,18 @@
-const mongoose = require("mongoose");
-const dotenv = require("dotenv");
+// const mongoose = require("mongoose");
+// const dotenv = require("dotenv");
 
-dotenv.config();
+// dotenv.config();
 
-async function connectToDatabase() {
-  try {
-    await mongoose.connect(process.env.URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    console.log("Connected to the database");
-  } catch (error) {
-    console.error("Error connecting to the database:", error);
-  }
-}
+// async function connectToDatabase() {
+//   try {
+//     await mongoose.connect(process.env.URL, {
+//       useNewUrlParser: true,
+//       useUnifiedTopology: true,
+//     });
+//     console.log("Connected to the database");
+//   } catch (error) {
+//     console.error("Error connecting to the database:", error);
+//   }
+// }
 
-module.exports = connectToDatabase;
+// module.exports = connectToDatabase;
